@@ -14,34 +14,101 @@
         <div class="header">
 
             <div class="title">
-                <h1>张子豪 Zhang Zihao</h1>
-                <p><br> Hi, I am now studying in University of Macau as a master of computer science. I received my bachelor's degree in computer sicence from East China University of China in 2020.</br>
-                    <br> My resesrch interest is generally Computer Graphic and Computer Vision, including autonomous driving and face recognition.</br>
-                    <br>email: zh.zhang@connect.um.edu.mo</br>
+                <h1>张子豪 Zihao Zhang</h1>
+                <p><br> student
+                    </br>
+                    email: zh.zhang@connect.um.edu.mo</br>
                     University of Macau, Taipa, Macau, China
+                    <br><br>
+                    <a href="https://github.com/greatzh" target="_blank"><img src="img/github-fill.png" style="vertical-align:middle" width="20">GithubPage</a> |
+                    <a href="https://space.bilibili.com/39109170" target="_blank"><img src="img/bilibili-fill.png" style="vertical-align:middle" width="20">Bilibili</a> |
+                    <a class="thumbnail" href="https://mp.weixin.qq.com/s?__biz=MzI3NDU0NzUzMA==&mid=2247485415&idx=1&sn=ee797e2ab91bc4e459258de39b48bcad&chksm=eb1311c2dc6498d4f4f70e986d8060438a5f5b1fc25645ec0c4b59d39f7a0c4afc7afe2c1931&&xtrack=1&scene=0&subscene=92&sessionid=1600478613&clicktime=1600478628&enterid=1600478628#rd"
+                        mce_href="https://mp.weixin.qq.com/s?__biz=MzI3NDU0NzUzMA==&mid=2247485415&idx=1&sn=ee797e2ab91bc4e459258de39b48bcad&chksm=eb1311c2dc6498d4f4f70e986d8060438a5f5b1fc25645ec0c4b59d39f7a0c4afc7afe2c1931&&xtrack=1&scene=0&subscene=92&sessionid=1600478613&clicktime=1600478628&enterid=1600478628#rd"
+                        target="_blank"><img src="img/wechat-fill.png" style="vertical-align:middle" width="20">WechatSuscribtion<span><img src="img/wechatpropaganda.png" mce_src="img/wechatpropaganda.png" width="600"  border="0"></span></a>
+                    </br>
                 </p>
             </div>
 
             <div class="pic">
-                <img src="https://avatars2.githubusercontent.com/u/71483558?s=460&u=587a79ba3ff72e2c8d576393a5ec1905e468c09b&v=4" width="200">
+                <img src="https://avatars2.githubusercontent.com/u/71483558?s=460&u=587a79ba3ff72e2c8d576393a5ec1905e468c09b&v=4" width="160">
             </div>
 
         </div>
 
-        <div class="sidenav">
 
-            <ul>
-                <li><a href=" ">Home</a></li>
-                <li><a href=" ">Sharing</a></li>
-                <li><a href=" ">Videos</a></li>
-                <li><a href=" ">Interseting</a></li>
-                <li><a href=" ">Personal</a></li>
-            </ul>
+        <div class="main">
+            <div class="content">
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Hi, I am now studying in University of Macau as a master of computer science. I received my bachelor's degree in computer sicence from East China University of Technology in 2020, and my graduation thesis is "Researches on deep
+                    learning frameworks with applications to image recognition" which focus on DL frameworks and face recognition based DL.
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;My resesrch interest is generally Computer Graphic and Computer Vision, including autonomous driving and face recognition.
+                </p>
 
+
+            </div>
+
+            <div id="div1" class="sidenav">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sharing.html">Sharing</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="interesting.html">Interesting</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                </ul>
+
+            </div>
+            <div class="clearer"><span></span></div>
+        </div>
+
+
+        <div class="footer">
+            <p style="text-align:center;">© updated, 2020 Sep by Zihao</p>
         </div>
     </div>
 
+    <script type="text/javascript">
+        function htmlScroll() {
+            var top = document.body.scrollTop || document.documentElement.scrollTop;
+            if (elFix.data_top < top) {
+                elFix.style.position = 'fixed';
+                elFix.style.top = 0;
+                elFix.style.left = elFix.data_left;
+            } else {
+                elFix.style.position = 'static';
+            }
+        }
 
+        function htmlPosition(obj) {
+            var o = obj;
+            var t = o.offsetTop;
+            var l = o.offsetLeft;
+            while (o = o.offsetParent) {
+                t += o.offsetTop;
+                l += o.offsetLeft;
+            }
+            obj.data_top = t;
+            obj.data_left = l;
+        }
+
+        var oldHtmlWidth = document.documentElement.offsetWidth;
+        window.onresize = function() {
+            var newHtmlWidth = document.documentElement.offsetWidth;
+            if (oldHtmlWidth == newHtmlWidth) {
+                return;
+            }
+            oldHtmlWidth = newHtmlWidth;
+            elFix.style.position = 'static';
+            htmlPosition(elFix);
+            htmlScroll();
+        }
+        window.onscroll = htmlScroll;
+
+        var elFix = document.getElementById('div1');
+        htmlPosition(elFix);
+    </script>
 </body>
 
 </html>

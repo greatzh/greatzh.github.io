@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="description" content="Zhang zihao,University of Macau, Research areas:Computer Vision, Computer Graphic, Deep Learning, Machine Learning, and pattern recognition" />
+    <meta name="keywords" content="CV, CG, DL, PR" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Zihao Zhang HomePage</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+
+            <div class="title">
+                <h1>张子豪 Zihao Zhang</h1>
+                <p><br> student
+                    </br>
+                    email: zh.zhang@connect.um.edu.mo</br>
+                    University of Macau, Taipa, Macau, China
+                    <br><br>
+                    <a href="https://github.com/greatzh" target="_blank"><img src="img/github-fill.png" style="vertical-align:middle" width="20">GithubPage</a> |
+                    <a href="https://space.bilibili.com/39109170" target="_blank"><img src="img/bilibili-fill.png" style="vertical-align:middle" width="20">Bilibili</a> |
+                    <a class="thumbnail" href="https://mp.weixin.qq.com/s?__biz=MzI3NDU0NzUzMA==&mid=2247485415&idx=1&sn=ee797e2ab91bc4e459258de39b48bcad&chksm=eb1311c2dc6498d4f4f70e986d8060438a5f5b1fc25645ec0c4b59d39f7a0c4afc7afe2c1931&&xtrack=1&scene=0&subscene=92&sessionid=1600478613&clicktime=1600478628&enterid=1600478628#rd"
+                        mce_href="https://mp.weixin.qq.com/s?__biz=MzI3NDU0NzUzMA==&mid=2247485415&idx=1&sn=ee797e2ab91bc4e459258de39b48bcad&chksm=eb1311c2dc6498d4f4f70e986d8060438a5f5b1fc25645ec0c4b59d39f7a0c4afc7afe2c1931&&xtrack=1&scene=0&subscene=92&sessionid=1600478613&clicktime=1600478628&enterid=1600478628#rd"
+                        target="_blank"><img src="img/wechat-fill.png" style="vertical-align:middle" width="20">WechatSuscribtion<span><img src="img/wechatpropaganda.png" mce_src="img/wechatpropaganda.png" width="600"  border="0"></span></a>
+                    </br>
+                </p>
+            </div>
+
+            <div class="pic">
+                <img src="https://avatars2.githubusercontent.com/u/71483558?s=460&u=587a79ba3ff72e2c8d576393a5ec1905e468c09b&v=4" width="160">
+            </div>
+
+        </div>
+
+
+        <div class="main">
+            <div class="content">
+                <br><br>
+                <h1> Interesting </h1>
+
+
+            </div>
+
+            <div id="div1" class="sidenav">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sharing.html">Sharing</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="interesting.html">Interesting</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                </ul>
+
+            </div>
+            <div class="clearer"><span></span></div>
+        </div>
+
+
+        <div class="footer">
+            <p style="text-align:center;">© updated, 2020 Sep by Zihao</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function htmlScroll() {
+            var top = document.body.scrollTop || document.documentElement.scrollTop;
+            if (elFix.data_top < top) {
+                elFix.style.position = 'fixed';
+                elFix.style.top = 0;
+                elFix.style.left = elFix.data_left;
+            } else {
+                elFix.style.position = 'static';
+            }
+        }
+
+        function htmlPosition(obj) {
+            var o = obj;
+            var t = o.offsetTop;
+            var l = o.offsetLeft;
+            while (o = o.offsetParent) {
+                t += o.offsetTop;
+                l += o.offsetLeft;
+            }
+            obj.data_top = t;
+            obj.data_left = l;
+        }
+
+        var oldHtmlWidth = document.documentElement.offsetWidth;
+        window.onresize = function() {
+            var newHtmlWidth = document.documentElement.offsetWidth;
+            if (oldHtmlWidth == newHtmlWidth) {
+                return;
+            }
+            oldHtmlWidth = newHtmlWidth;
+            elFix.style.position = 'static';
+            htmlPosition(elFix);
+            htmlScroll();
+        }
+        window.onscroll = htmlScroll;
+
+        var elFix = document.getElementById('div1');
+        htmlPosition(elFix);
+    </script>
+</body>
+
+</html>
