@@ -135,6 +135,13 @@
                     
                     .content li {
                         /* list-style: url(img/li.gif);*/
+                        font-size: 1.2em;
+                        /*font-weight: bold;*/
+                        margin-left: 18px;
+                    }
+                    
+                    .content ol p {
+                        /* list-style: url(img/li.gif);*/
                         margin-left: 18px;
                     }
                     
@@ -191,4 +198,27 @@
                         top: 0;
                         left: 140px;
                         /*position where enlarged image should offset horizontally */
+                    }
+                    
+                    .tooltip {
+                        position: relative;
+                        display: inline-block;
+                    }
+                    
+                    .tooltip .tooltiptext {
+                        visibility: hidden;
+                        width: 120px;
+                        background-color: black;
+                        color: #fff;
+                        text-align: center;
+                        border-radius: 6px;
+                        padding: 5px 0;
+                        /* 定位 */
+                        position: absolute;
+                        z-index: 1;
+                    }
+                    
+                    .tooltip:hover .tooltiptext {
+                        visibility: visible;
+                        top: 15px
                     }
