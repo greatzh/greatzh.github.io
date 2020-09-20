@@ -22,7 +22,7 @@
                     
                     p,
                     ul {
-                        font-size: 1em;
+                        font-size: 1.2em;
                         padding-bottom: 1em;
                     }
                     
@@ -31,7 +31,7 @@
                     }
                     
                     h1 {
-                        font-size: 1.6em;
+                        font-size: 2.0em;
                         margin-bottom: 4px;
                     }
                     
@@ -83,6 +83,31 @@
                         font: normal "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
                     }
                     
+                    .card {
+                        height: 150px;
+                        width: 100%;
+                    }
+                    
+                    .card h1 {
+                        font-size: 1.2em;
+                    }
+                    
+                    .cardpic {
+                        float: left;
+                        width: 20%;
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    
+                    .cardword {
+                        float: right;
+                        width: 70%;
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    
                     .title h1 {
                         color: #000;
                         font: normal 2.0em "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
@@ -109,6 +134,7 @@
                     }
                     
                     .sidenav li {
+                        font-size: 1.3em;
                         border-bottom: 1px solid #FFF;
                         border-top: 1px solid #FFF;
                         list-style: none;
@@ -140,6 +166,10 @@
                         margin-left: 18px;
                     }
                     
+                    .content h2 {
+                        font-size: 1.6em;
+                    }
+                    
                     .content ol p {
                         /* list-style: url(img/li.gif);*/
                         margin-left: 18px;
@@ -154,6 +184,10 @@
                         text-align: center;
                     }
                     
+                    .footer p {
+                        font-size: 1.0em;
+                    }
+                    
                     .footer a {
                         color: #FFF;
                         text-decoration: none;
@@ -164,17 +198,17 @@
                         text-decoration: underline;
                     }
                     
-                    .thumbnail {
+                    .thumbnails {
                         position: relative;
                         z-index: 0;
                     }
                     
-                    .thumbnail:hover {
+                    .thumbnails:hover {
                         background-color: transparent;
                         z-index: 50;
                     }
                     
-                    .thumbnail span {
+                    .thumbnails span {
                         /*CSS for enlarged image*/
                         position: absolute;
                         background-color: lightyellow;
@@ -186,13 +220,13 @@
                         text-decoration: none;
                     }
                     
-                    .thumbnail span img {
+                    .thumbnails span img {
                         /*CSS for enlarged image*/
                         border-width: 0;
                         padding: 0px;
                     }
                     
-                    .thumbnail:hover span {
+                    .thumbnails:hover span {
                         /*CSS for enlarged image on hover*/
                         visibility: visible;
                         top: 0;
