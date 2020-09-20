@@ -173,6 +173,7 @@
                     .content ol p {
                         /* list-style: url(img/li.gif);*/
                         margin-left: 18px;
+                        font-size:1.0em;
                     }
                     
                     .footer {
