@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>md文档内容转成html显示</title>
+</head>
+
+<body>
+    <div id="content"></div>
+
+    <script type="text/javascript" src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
+    <script type="text/javascript">
+        var f = "https://raw.githubusercontent.com/greatzh/greatzh.github.io/master/md/1.md";
+        var xmlhttp;
+        if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            xmlhttp = new ActiveXObject('Microsoft.XMLHttp');
+        }
+
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById('content').innerHTML = marked(xmlhttp.responseText);
+            }
+        }
+
+        // 向服务器发送请求
+        xmlhttp.open('GET', f, true);
+        xmlhttp.send();
+    </script>
+</body>
+
+</html>

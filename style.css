@@ -173,6 +173,7 @@
                     .content ol p {
                         /* list-style: url(img/li.gif);*/
                         margin-left: 18px;
+                        font-size: 1.0em;
                     }
                     
                     .footer {
@@ -255,4 +256,29 @@
                     .tooltip:hover .tooltiptext {
                         visibility: visible;
                         top: 15px
+                    }
+                    
+                    .snackbar {
+                        visibility: hidden;
+                        min-width: 250px;
+                        margin-left: -125px;
+                        background-color: #333;
+                        color: #fff;
+                        text-align: center;
+                        border-radius: 2px;
+                        padding: 16px;
+                        position: fixed;
+                        z-index: 1;
+                        left: 50%;
+                        bottom: 30px;
+                        font-size: 17px;
+                    }
+                    
+                    .buttonshow {
+                        display: none;
+                    }
+                    
+                    .closebtn {
+                        font-size: 1.3em;
+                        text-align: center;
                     }
