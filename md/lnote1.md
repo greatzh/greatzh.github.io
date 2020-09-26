@@ -8,7 +8,7 @@ Which means you can find any materials like research papers, github repository, 
 
 **step2 Make a Table of Your Understanding Level**
 
-You can make a table like the below part. It is crucial that there’s a method to track the understanding of each shortlisted resources.<input type="checkbox" checked="checked">
+You can make a table like the below part. It is crucial that there’s a method to track the understanding of each shortlisted resources.
 
 |                          Resources                           |         10-20%          |         20-40%          |         40-60%          |         60-80%          |         80-100%         |
 | :----------------------------------------------------------: | :---------------------: | :---------------------: | :---------------------: | :---------------------: | :---------------------: |
