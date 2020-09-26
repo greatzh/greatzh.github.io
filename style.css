@@ -88,8 +88,17 @@
                         width: 100%;
                     }
                     
+                    .txtcard {
+                        height: 150px;
+                        width: 100%;
+                    }
+                    
+                    .txtcard h1 {
+                        font-size: 1.3em;
+                    }
+                    
                     .card h1 {
-                        font-size: 1.2em;
+                        font-size: 1.3em;
                     }
                     
                     .cardpic {
@@ -173,6 +182,7 @@
                     .content ol p {
                         /* list-style: url(img/li.gif);*/
                         margin-left: 18px;
+                        font-size: 1.0em;
                         font-size: 1.0em;
                     }
                     
