@@ -69,8 +69,8 @@ How to find the $w,\ b$ make the $min(f)$
 
 $$
 \nabla L={\left[\matrix{
-{\frac{{\partial}L}{{\partial}w}}\\
-{\frac{{\partial}L}{{\partial}b}}
+\frac{{\partial}L}{{\partial}w}\\
+\frac{{\partial}L}{{\partial}b}
 }
 \right]}_{gradient}
 $$
