@@ -103,11 +103,11 @@ L(w,b)=\sum_{n=1}^{10}{({\hat{y}}^n-(b+w\cdot\ x_{cp}^n))^2}
 $$
 
 $$
-\frac{{\partial}L}{{\partial}w}=\sum_{n=1}^{10}{2({\hat{y}}^n-(b+w\cdot\ x_{cp}^n))(-x_{cp}^n)}
+\frac{\partial L}{\partial w}=\sum_{n=1}^{10}{2({\hat{y}}^n-(b+w\cdot\ x_{cp}^n))(-x_{cp}^n)}
 $$
 
 $$
-\frac{{\partial}L}{{\partial}b}=\sum_{n=1}^{10}{2({\hat{y}}^n-(b+w\cdot\ x_{cp}^n))(-1)}
+\frac{\partial L}{{\partial b}=\sum_{n=1}^{10}{2({\hat{y}}^n-(b+w\cdot\ x_{cp}^n))(-1)}
 $$
 
 #### Selecting the another Model
