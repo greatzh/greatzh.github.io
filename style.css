@@ -186,6 +186,11 @@
                         font-size: 1.0em;
                     }
                     
+                    .notfound {
+                        text-align: center;
+                        padding-top: 30px;
+                    }
+                    
                     .footer {
                         background: #FFF;
                         color: #000;
