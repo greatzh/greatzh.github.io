@@ -1,31 +1,95 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <meta name="description" content="Zhang zihao,University of Macau, Research areas:Computer Vision, Computer Graphic, Deep Learning, Machine Learning, and pattern recognition" />
     <meta name="keywords" content="CV, CG, DL, PR" />
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <title>Zihao Zhang HomePage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        .box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .number {
+            font-size: 80px;
+            color: #666;
+            font-weight: bold;
+        }
+        
+        .text {
+            font-size: 14px;
+            margin: 24px;
+            color: #333;
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .btn {
+            padding: 8px 24px;
+            display: inline-block;
+            text-decoration: none;
+            background: #fff;
+            border: 2px solid #efefef;
+            color: #333;
+            margin: 24px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer {
+            padding: 16px;
+            color: #777;
+            font-weight: lighter;
+        }
+        
+        .footer a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="box">
+        <h2>404 Not Found</h2>
+        <div style="text-align: center;">
+            <img src="img/404.svg" width="60%"><br/>
+        </div>
 
-    <div class="notfound">
-        <h1>404 Not Found</h1>
-        <img src="img/404.svg" width="60%"><br/>
-        <h1><a href="index.html">🚄Back to Home.</a></h1>
+        <h2><a href="index.html">🚄Back to Home.</a></h2>
     </div>
-
-
-    <div class="clearer"><span></span></div>
-
-
-    <div class="footer">
-        <p style="text-align:center;">Built with <a href="https://github.com/greatzh">GitHub</a> and Proudly Depolyed on <a href="https://vercel.com/">Vercel</a>.<br> ©2020 - 2021, updated 2021 Jan by Johnson, ZhangZihao.
-        </p>
-    </div>
-
+    <footer class="footer">
+        Built with <a href="https://github.com/greatzh">GitHub</a> and Proudly Depolyed on <a href="https://vercel.com/">Vercel</a>.<br> ©2020 - 2021, updated 2021 Jan by Johnson, ZhangZihao.
+    </footer>
+    <script>
+        var back = document.getElementById('back')
+        back.onclick = function() {
+            console.log('run...');
+            history.back()
+        }
+    </script>
 </body>
 
 </html>
