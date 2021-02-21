@@ -24,9 +24,9 @@ function Diffdate(dend, dstart) {
 }
 setInterval("Diffdate(dend, dstart)", 1000);
 var currentTime = new Date();
-var startTime1 = new Date("2019/5/9");
-var startTime2 = new Date("1998/10/24");
-var startTime3 = new Date("2021/10/24");
+var startTime1 = new Date("2017/5/9");
+var startTime2 = new Date("1998/10/22");
+var startTime3 = new Date("2021/10/22");
 
 var met = Diffdate(currentTime, startTime1);
 var bor = Diffdate(currentTime, startTime2);
