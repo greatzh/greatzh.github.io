@@ -20,6 +20,7 @@ function Diffdate(dend, dstart) {
     if (dif < 0) {
         day = null;
     }
+    day.toString();
     return day;
 }
 setInterval("Diffdate(dend, dstart)", 1000);
