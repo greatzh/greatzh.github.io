@@ -20,7 +20,6 @@ function Diffdate(dend, dstart) {
     if (dif < 0) {
         day = null;
     }
-    day.toString();
     return day;
 }
 setInterval("Diffdate(dend, dstart)", 1000);
@@ -33,6 +32,6 @@ var met = Diffdate(currentTime, startTime1);
 var bor = Diffdate(currentTime, startTime2);
 var nex = Diffdate(startTime3, currentTime);
 
-document.getElementById('met').innerHTML = met;
-document.getElementById('bor').innerHTML = bor;
-document.getElementById('nex').innerHTML = nex;
+document.getElementById('met').innerHTML = String(met);
+document.getElementById('bor').innerHTML = String(bor);
+document.getElementById('nex').innerHTML = String(nex);
