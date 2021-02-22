@@ -12,6 +12,17 @@ const musicCover = document.getElementById("music-cover")
 // 音乐信息
 
 const songs = ["交响梦", "复杂人生", "幸运大门", "I Think There's Something You Should Know", "You're Not Sorry", "回忆录", "安静了"]
+const images = ["https://s3.ax1x.com/2021/02/22/yHnqYt.png", "https://s3.ax1x.com/2021/02/22/yHnLfP.jpg", "https://s3.ax1x.com/2021/02/22/yHuSmQ.jpg", "https://s3.ax1x.com/2021/02/22/yHnbFI.png",
+    "https://s3.ax1x.com/2021/02/22/yHnXSf.jpg", "https://s3.ax1x.com/2021/02/22/yHnjl8.jpg", "https://s3.ax1x.com/2021/02/22/yHu9Ts.png"
+]
+const songslink = ["https://public.bn.files.1drv.com/y4mhUKHjCNtiGBdCXLaEjzR-T5oRmOI79ns0cHb3hAQkk-VlxHw6ZucVWbvzk2V7Dy9rX1yy14x83SVXLZ2UVvpJ0OINUyekX39ESm0Ypwu5pnUDJw2HJ_TuBfF-s369XDKYh5n5xNh6Ks4e7PClt227rDKIHX0sasEd4uhCz66pnuWzL0y7rohV97-Zkm1FF23CAiTxjYYSQnRkLQssPCzKWwRX1Bhtihl1nn_XiHfc0Y",
+        "https://public.bn.files.1drv.com/y4mpHvdx8Wtg-Xcm7JVDq0oZTJjQ2n-d2gSMKI-Fg01Dvs4-YdwZRKwrxse_WajzAti94OzwPca5TQdCQ8X791p1ggwcHc-H2AcVS2tDyTLxUOrH7qGrHPK8TUJa-joYN67iErITn-FLJWu5edwu_xug3eSjG_R85_F3j7mtHsR_IjlnKAxlvdXZnqjtUV90NetYfZAT7-CdtAnata32aPtGDX_4Zo-ATisIaOY5CHUdNo",
+        "https://public.bn.files.1drv.com/y4mcUpjAGBCl5kae47jFlZyhSR4jlEED-EIxM8_R6k3th5jgvGHo-ePAR1MVhI97HQZeHa2yiKnvlhDq4QRNPBs5-GY3m2yYRkKyBUR8Cb2gdtUAPddzJzuNnslDEWP548Hy9O-ceEtjBqu8UZTXzJtkXDIYIqXqEN2RUz8Grz1_YTaWsMKkN6h-Y5uy-HQhfdaknWs5mAvpc-Tede5b8ShTCXijRYNwqI8xX6ZvP5Zik8",
+        "https://public.bn.files.1drv.com/y4mVL3NxbSXGvVT5mg3iWJuTleOdog3oBsjaYdVWK8fCCMbNOq8ked9DGFv6jM-BVYqgmV-WAGJLJ8ZQE-0E4r1l5M4WQdMj2YZiq1Uilnrk2NgsOnbruW_-cba0el-0EmpBIust22YRf18KGVwTUvkUD83oUhSTKw6bgx5_eVmYw_WkXxvV7_UuA_Vm65KcHGBx2AFJ0ph5d04cego008yMegC29_v7uJj0Lj6cQh8kSg",
+        "https://public.bn.files.1drv.com/y4mUIKDEcfIV4Jt2Qs029RkO9oMpMa8Y22B26vNN8ajqERomTRCD-tufqRafZGVgzpzUl1RY_BYiXA3TSQEp71mlg0Qggc0K2ruRmbvNqoXwdrzWgNw6kDT2l7qKNZ2zSiP3pl9xn1lJqh6uPHeErohsSww6YHz86rr6wfSOp7xRSQcomPEY1Fbc2obNP6eoOekbidFQ3roHqc7U_ThGTmGUKwNkl4ToBLPm1mR7Nqw_qs",
+        "https://public.bn.files.1drv.com/y4mSn9csW_SyZwEWcEZm2BAys_rBzMrzEl1VAwa-ONUxG1LEkpxO_VvOorzRWJFJ-LAA6TXGnIGBkIVrKSSCOO6KzgyE5K-T5W7VzRtxZYIGLgk-PuZ-AeETlW9j4Uy5syS2pdkeyD_PV-rqCj_ZtmYhNM74GOuMYbIAUxLQbpQnqzi2DzZD0W6oWMmm0alvq0zWzBOnBgniScFXGqLvnhNws4wBtdKwXbU8if9tFxPSrI",
+        "https://public.bn.files.1drv.com/y4mPpcMi41x3QQmbpZrW9xMLyXquqFyImmhsz2dgwa7HG7xpC19zOLYy4EtPt9QpeJn-nkynggZO5IFaF3VHUsEhbKcxj-OPqj-zwpBgs59y4nTQ3kRwSYuyKFHkGYN15NHvHIWavSbNjMF3QDbO3Id9pmsJ_3pEedmtFDBdZKwjOhdpbmKZsyX0jWpJfVTy_KgOJ6ZZWwCiY-LOVJJAwZJajZALjRFbxEZBJ03qWwFybk"
+    ]
     // 默认从第一首开始
 var date_today = new Date();
 random_num = date_today.getDate();
@@ -22,8 +33,8 @@ loadSong(songs[songIndex])
     // 更新歌曲细节
 function loadSong(song) {
     title.innerHTML = song
-    audio.src = `https://zihol.studio/sp/music/${song}.mp3`;
-    musicCover.src = `https://zihol.studio/sp/img/${song}.jpg`;
+    audio.src = songslink[songIndex];
+    musicCover.src = images[songIndex];
 }
 
 // 播放歌曲
