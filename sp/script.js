@@ -4,10 +4,19 @@ const prevBtn = document.getElementById("prev")
 const nextBtn = document.getElementById("next")
 
 const audio = document.getElementById("audio")
+const s1 = document.getElementById("s1")
+const s2 = document.getElementById("s2")
+const s3 = document.getElementById("s3")
 const progress = document.getElementById("progress")
 const progressContainer = document.getElementById("progress-container")
 const title = document.getElementById("title")
 const musicCover = document.getElementById("music-cover")
+
+const slides = ["https://s3.ax1x.com/2021/02/22/y7wLge.jpg", "https://s3.ax1x.com/2021/02/22/y7whu9.jpg", "https://s3.ax1x.com/2021/02/22/y7w6hT.jpg", "https://s3.ax1x.com/2021/02/22/y7wyNV.jpg",
+    "https://s3.ax1x.com/2021/02/22/y7wD7q.jpg", "https://s3.ax1x.com/2021/02/22/y7wBBn.jpg", "https://s3.ax1x.com/2021/02/22/y7wATx.jpg", "https://s3.ax1x.com/2021/02/22/y7dvkV.jpg",
+    "https://s3.ax1x.com/2021/02/22/y7dOwq.jpg", "https://s3.ax1x.com/2021/02/22/y7dbOs.jpg", "https://s3.ax1x.com/2021/02/22/y7dTSg.jpg", "https://s3.ax1x.com/2021/02/21/yTsT8f.jpg",
+    "https://s3.ax1x.com/2021/02/21/yTsoPP.jpg", "https://s3.ax1x.com/2021/02/21/yTs55t.jpg"
+]
 
 // 音乐信息
 
@@ -26,8 +35,14 @@ const songslink = ["https://public.bn.files.1drv.com/y4mhUKHjCNtiGBdCXLaEjzR-T5o
     // 默认从第一首开始
 var date_today = new Date();
 random_num = date_today.getDate();
-random_num = random_num % 7;
-let songIndex = random_num;
+randsong = random_num % 7;
+
+snum = random_num % 14;
+s1.src = slides[snum];
+s2.src = slides[snum];
+s3.src = slides[snum];
+
+let songIndex = randsong;
 // 将歌曲细节加载到DOM
 loadSong(songs[songIndex])
     // 更新歌曲细节
