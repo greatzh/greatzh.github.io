@@ -10,6 +10,7 @@ const title = document.getElementById("title")
 const musicCover = document.getElementById("music-cover")
 
 // 音乐信息
+
 const songs = ["交响梦", "复杂人生", "幸运大门", "I Think There's Something You Should Know", "You're Not Sorry", "回忆录", "安静了"]
     // 默认从第一首开始
 var date_today = new Date();
@@ -21,8 +22,8 @@ loadSong(songs[songIndex])
     // 更新歌曲细节
 function loadSong(song) {
     title.innerHTML = song
-    audio.src = `music/${song}.mp3`;
-    musicCover.src = `img/${song}.jpg`;
+    audio.src = `https://zihol.studio/sp/music/${song}.mp3`;
+    musicCover.src = `https://zihol.studio/sp/img/${song}.jpg`;
 }
 
 // 播放歌曲
