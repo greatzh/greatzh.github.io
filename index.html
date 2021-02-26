@@ -23,8 +23,80 @@
             display: none;
         }
     </style>
-
-
+    <style>
+        .button_link {
+            background-color: #4CAF50;
+            /* Green */
+            color: white;
+            padding: 10px 8px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            width: 120px;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .button1 {
+            background-color: rgb(248, 248, 248);
+            color: black;
+            border-bottom: 3px solid rgb(36, 41, 46);
+            border-top-style: none;
+            border-right-style: none;
+            border-left-style: none;
+        }
+        
+        .button1:hover {
+            background-color: rgb(36, 41, 46);
+            color: white;
+        }
+        
+        .button2 {
+            background-color: rgb(248, 248, 248);
+            color: black;
+            border-bottom: 3px solid rgb(164, 187, 209);
+            border-top-style: none;
+            border-right-style: none;
+            border-left-style: none;
+        }
+        
+        .button2:hover {
+            background-color: rgb(164, 187, 209);
+            color: white;
+        }
+        
+        .button3 {
+            background-color: rgb(248, 248, 248);
+            color: black;
+            border-bottom: 3px solid rgb(251, 114, 153);
+            border-top-style: none;
+            border-right-style: none;
+            border-left-style: none;
+        }
+        
+        .button3:hover {
+            background-color: rgb(251, 114, 153);
+            color: white;
+        }
+        
+        .button5 {
+            background-color: rgb(248, 248, 248);
+            color: black;
+            border-bottom: 3px solid rgb(26, 173, 25);
+            border-top-style: none;
+            border-right-style: none;
+            border-left-style: none;
+        }
+        
+        .button5:hover {
+            background-color: rgb(26, 173, 25);
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,13 +106,13 @@
 
                 <nav class="navbar navbar-default" role="navigation" style="margin-top: 30px;">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>                        <a class="navbar-brand" href="#">Johnson</a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>                        <a class="navbar-brand" href="https://zihol.studio">Johnson</a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li class="active">
-                                <a href="https://zihol.studio">Home</a>
+                                <a href="#">Home</a>
                             </li>
                             <li>
                                 <a href="publications/">Publications</a>
@@ -122,15 +194,19 @@
                         <div class="media-body">
                             <h4 class="media-heading">
                                 <h2>
-                                    Zihao Zhang
+                                    Johnson
                                 </h2>
-                                <p>student<br/> email: <a href="mailto:zihol@qq.com">zihol@qq.com</a></br>
+                                <p style="font-size: medium;">student<br/> email: <a href="mailto:zihol@qq.com">zihol@qq.com</a></br>
                                     University of Macau, Macau.</br>
-                                    <a href="https://github.com/greatzh" target="_blank"><img src="img/github-fill.svg" style="vertical-align:middle" width="22">Developer</a> |
-                                    <a href="https://blog.zihol.studio/" target="_blank"><img src="img/blog.svg" style="vertical-align:middle" width="22">Blogger</a> |
-                                    <a href="https://space.bilibili.com/39109170" target="_blank"><img src="img/bilibili-fill.svg" style="vertical-align:middle" width="22">Uploader</a> |
-                                    <a href="http://mp.weixin.qq.com/profile?src=3&timestamp=1614258912&ver=1&signature=-KAo-rebI1JhBleDoZvifPPoaYmHnGhBHU4IgA2ZWvzqc7eTzK5VdIiMHwAlWAqR4LQpFWL-nC0f*wxeK5v7-w==" target="_blank"><img src="img/wechat-fill.svg" style="vertical-align:middle" width="22">Writer</a>
+                                    <a href="https://github.com/greatzh" target="_blank"><button class="button_link button1">💻Developer</button></a>
+                                    <a href="https://blog.zihol.studio/" target="_blank"><button class="button_link button2">📝Blogger</button></a>
+                                    <a href="https://space.bilibili.com/39109170" target="_blank"><button class="button_link button3">📸Uploader</button></a>
+                                    <a href="http://mp.weixin.qq.com/profile?src=3&timestamp=1614258912&ver=1&signature=-KAo-rebI1JhBleDoZvifPPoaYmHnGhBHU4IgA2ZWvzqc7eTzK5VdIiMHwAlWAqR4LQpFWL-nC0f*wxeK5v7-w==" target="_blank"><button class="button_link button5">🍻Writer</button></a>
                                 </p>
+                                <!-- <img src="img/github-fill.svg" style="vertical-align:middle" width="22">
+                                <img src="img/blog.svg" style="vertical-align:middle" width="22">
+                                <img src="img/bilibili-fill.svg" style="vertical-align:middle" width="22">
+                                <img src="img/wechat-fill.svg" style="vertical-align:middle" width="22"> -->
                         </div>
                     </div>
 
