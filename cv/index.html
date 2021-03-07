@@ -23,7 +23,6 @@
             display: none;
         }
     </style>
-
     <style>
         .button_link {
             background-color: #4CAF50;
@@ -98,6 +97,7 @@
             color: white;
         }
     </style>
+
 </head>
 
 <body>
@@ -118,8 +118,8 @@
                             <li>
                                 <a href="/publications/">Publications</a>
                             </li>
-                            <li class="active">
-                                <a href="#">Projects</a>
+                            <li>
+                                <a href="/projects/">Projects</a>
                             </li>
                             <li>
                                 <a href="/sharing/">Sharing</a>
@@ -127,8 +127,8 @@
                             <li>
                                 <a href="/videos/">videos</a>
                             </li>
-                            <li>
-                                <a href="/cv/">CV</a>
+                            <li class="active">
+                                <a href="#">CV</a>
                             </li>
                             <!-- <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
@@ -209,29 +209,21 @@
                     <a href="https://blog.zihol.studio/" target="_blank"><button class="button_link button2">📝Blogger</button></a>
                     <a href="https://space.bilibili.com/39109170" target="_blank"><button class="button_link button3">📸Uploader</button></a>
                     <a href="/writer/" target="_blank"><button class="button_link button5">🍻Writer</button></a>
+
+
                 </div>
             </div>
         </div>
         <div class="row clearfix">
             <div class="col-md-12 column">
                 <div style="padding-bottom: 30px;">
-                    <h2> Projects </h2>
-                    <p>
-                        <ol>
-                            <LI style="font-weight: bold;">省级重点创新训练项目(202010405023)<br>基于Keras+TensorFlow的人脸识别 2020-06-10 至 2021-06-10, 2万, 第一主持人
-                            </li>
-                            </br>
-                            <p style="font-size: medium;">
-                                <I>首先对于现阶段常用的深度学习框架进行整理分析， 根据自己的能力选择容易入门以及简单上手的几个框架进行重点的研究，然后针对研究的结果， 对于不同的深度学习框架进行深入分析， 通过定量或定性的方法对不同的框架进一步进行性训练过程以及预测结果的异同比较。</I>
-                            </p>
-                            <p style="font-size: medium;">
-                                <a href="https://github.com/greatzh/FaceRecognition" data-toggle="tooltip" data-placement="left" title="Click to view">Project Page(Related)</a>.
-                                <a href="https://github.com/greatzh/FaceRecognition" data-toggle="tooltip" data-placement="bottom" title="To be Updated">Paper</a>.
-                                <a href="https://github.com/greatzh/FaceRecognition" data-toggle="tooltip" data-placement="right" title="To be Updated">Demo</a>.
-                            </p>
-                        </ol>
-                        <p>To be continued...</p>
-                    </p>
+                    <h2> Curriculum Vitae </h2>
+                    <p>You can download my CV <a href="https://zihol.studio/cv/CV_of_zihao_ZHANG.pdf">from this link</a> (2020.12.31 update).</p>
+                    <object data="https://zihol.studio/cv/CV_of_zihao_ZHANG.pdf" type="application/pdf" width="750px" height="750px">
+                        <embed src="https://zihol.studio/cv/CV_of_zihao_ZHANG.pdf" type="application/pdf">
+                            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://zihol.studio/cv/CV_of_zihao_ZHANG.pdf">Download PDF</a>.</p>
+                        </embed>
+                    </object>
                 </div>
             </div>
         </div>
@@ -252,11 +244,6 @@
 
 </body>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js " charset="utf-8 "></script>
-<script>
-    $(function() {
-        $("[data-toggle='tooltip']").tooltip();
-    });
-</script>
 <script language="JavaScript">
     $(document).ready(function() {
         $(window).scroll(function() {
